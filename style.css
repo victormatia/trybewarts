@@ -25,11 +25,14 @@
 
 main {
   display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 80%;
 }
 
 #evaluation-form {
   display: flex;
-  width: 675px;
+  min-width: 675px;
   flex-direction: column;
 }
 
@@ -53,4 +56,17 @@ input {
 .test {
   display: none;
   width: 675px;
+}
+
+#comment {
+  width: 40%;
+}
+
+#counter {
+  width: 30px;
+  color: rgb(57, 57, 57);
+  background-color: rgba(255, 255, 255, 0.734);
+  position: relative;
+  top: -27px;
+  left: 218px;
 }
