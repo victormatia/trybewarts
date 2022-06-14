@@ -9,7 +9,7 @@
 </head>
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="">
+    <a href="./index.html"><img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="logo trybewarts"></a>
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" action="" method="get">
       <input id="email" class="input-style" type="email" placeholder="Email" name="email" required>
@@ -46,27 +46,31 @@
       </section>
       <section class="family family-learn">
         <p id="label-family">Qual sua família?</p>
-        <label for="frontend">
-          <input id="frontend"  class="family" type="radio" name="family" value="Frontend">Frontend
-        </label>      
-        <label for="backend">
-          <input id="backend" class="family" type="radio" name="family" value="Backend">Backend
-        </label>
-        <label for="fullstack">
-          <input id="fullstack" class="family" type="radio" name="family" value="FullStack">FullStack
-        </label>
+        <section>
+          <label for="frontend">
+            <input id="frontend"  class="family" type="radio" name="family" value="Frontend">Frontend
+          </label>
+          <label for="backend">
+            <input id="backend" class="family" type="radio" name="family" value="Backend">Backend
+          </label>
+          <label for="fullstack">
+            <input id="fullstack" class="family" type="radio" name="family" value="FullStack">FullStack
+          </label>
+        </section>
       </section> 
       <section class="family family-learn"> 
-        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-        <input id="hofs" class="subject" value="HoFs" type="checkbox" name="">HoFs
-        <input id="jest" class="subject" value="Jest" type="checkbox" name="">Jest
-        <input id="promises" class="subject" value="Promises" type="checkbox" name="">Promises
-        <input id="react" class="subject" value="React" type="checkbox" name="">React
-        <input id="sql" class="subject" value="SQL" type="checkbox" name="">SQL
-        <input id="python" class="subject" value="Python" type="checkbox" name="">Python
+        <p id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</p>
+        <section id="contents">
+          <label><input id="hofs" class="subject" value="HoFs" type="checkbox" name="">HoFs</label>
+          <label><input id="jest" class="subject" value="Jest" type="checkbox" name="">Jest</label>
+          <label><input id="promises" class="subject" value="Promises" type="checkbox" name="">Promises</label>
+          <label><input id="react" class="subject" value="React" type="checkbox" name="">React</label>
+          <label><input id="sql" class="subject" value="SQL" type="checkbox" name="">SQL</label>
+          <label><input id="python" class="subject" value="Python" type="checkbox" name="">Python</label>
+        </section>
       </section>
       <hr class="hr-style">
-      <section>
+      <section id="rate-sec" class="family">
         <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
         <section>
           <input class="rate" type="radio" name="rate" value="1">1
@@ -80,16 +84,16 @@
           <input class="rate" type="radio" name="rate" value="9">9
           <input class="rate" type="radio" name="rate" value="10">10
         </section>
-        <section id="comment">
-          <label class="textarea" for="">Deixe seu comentário:</label>
-          <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-          <div id="counter">500</div>
-        </section>
+      </section>
+      <section id="comment">
+        <label class="textarea" for="">Deixe seu comentário:</label>
+        <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <div id="counter">500</div>
       </section>
       <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
         <input id="agreement" type="checkbox" name="">
       </label>
-      <button id="submit-btn" type="submit" disabled>Enviar</button>
+      <button id="submit-btn" class="btn-style" type="submit" disabled>Enviar</button>
     </form>
     <aside>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
